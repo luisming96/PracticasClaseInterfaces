@@ -2,47 +2,70 @@ doctype html
 html(lang="es")
   head
     meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Registro de MACs
-    link(rel="stylesheet" href="./estilos.css")
+    link(rel="stylesheet", href="./estilos.css")
   body
     header
       h1 Registro de direcciones MAC
 
-    main
-      section
-        h2 Introduce tus datos
-        form
-          div.campo
-            label(for="mac") direc. MAC
-            input#mac(type="text" name="mac" placeholder="74:56:3C:59:E1:1D" required)
+    main.contenedor-principal
+      section.seccion-principal
+        article.contenedor-formulario
+          h2 Introduce tus datos
+          form
+            .grupo-campos
+              .campo
+                label
+                  | Nombre
+                  input(type="text", name="nombre", placeholder="Nombre")
+              .campo
+                label
+                  | Apellidos
+                  input(type="text", name="apellidos", placeholder="Apellidos")
+              .campo
+                label
+                  | Direc. MAC
+                  input(type="text", name="mac", placeholder="MAC", required)
 
-          div.campo
-            label(for="comentario") Comentario
-            input#comentario(type="text" name="comentario" placeholder="PC_1DAW1" required)
-
-          div.campo
-            label(for="clase") Clase/Aula
-            select#clase(name="clase")
-              option(value="DAM") DAM
-              option(value="DAW") DAW
-              option(value="ASIR") ASIR
-
-          div.campo-checkbox
-            input#profesor(type="checkbox" name="profesor")
-            label(for="profesor") Soy profesor (se añadirá al archivo de profesores)
-
-          button(type="submit") Enviar
-          button(type="reset") Limpiar
-
-      section
-        h2 Consultas
-        form(action="consultas.html" method="get")
-          button(type="submit") Consultar MACs agregadas
-
-      section
-        h2 Borrar una MAC
-        form
-          div.campo
-            label(for="borrar-mac") Introduce MAC a eliminar
-            input#borrar-mac(type="text" name="borrar-mac")
-            button(type="submit") Borrar MAC
+            .grupo-campos
+              .campo
+                label
+                  | Clase/Aula
+                  select(name="clase")
+                    option(value="DAM") DAM
+                    option(value="DAW") DAW
+                    option(value="ASIR") ASIR
+              .campo
+                label
+                  input(type="checkbox", name="profesor")
+                  | Soy profesor
+            
+            .campo-comentario
+              label
+                | Comentario
+                input(type="text", name="comentario", placeholder="Comentario")
+            
+            .contenedor-botones
+              button(type="submit") Enviar
+              button(type="reset") Limpiar
+        
+        aside.contenedor-acciones
+          .seccion-accion
+            h2 Consultar MACs
+            form
+              .contenedor-botones
+                button(type="submit") Consultar MACs agregadas
+          
+          .seccion-accion
+            h2 Borrar una MAC
+            form
+              .campo-borrar
+                label
+                  | Introducir MAC a eliminar
+                  input(type="text", name="borrar-mac")
+              .contenedor-botones
+                button(type="submit") Borrar MAC
+    
+    footer
+      p 2025 - Luis Miguel Nuño

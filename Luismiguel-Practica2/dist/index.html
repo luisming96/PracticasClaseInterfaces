@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de MACs</title>
     <link rel="stylesheet" href="./estilos.css">
   </head>
@@ -9,50 +10,82 @@
     <header>
       <h1>Registro de direcciones MAC</h1>
     </header>
-    <main>
-      <section>
-        <h2>Introduce tus datos</h2>
-        <form>
-          <div class="campo">
-            <label for="mac">direc. MAC</label>
-            <input id="mac" type="text" name="mac" placeholder="74:56:3C:59:E1:1D" required>
+    <main class="contenedor-principal">
+      <section class="seccion-principal">
+        <article class="contenedor-formulario">
+          <h2>Introduce tus datos</h2>
+          <form>
+            <div class="grupo-campos">
+              <div class="campo">
+                <label>Nombre
+                  <input type="text" name="nombre" placeholder="Nombre">
+                </label>
+              </div>
+              <div class="campo">
+                <label>Apellidos
+                  <input type="text" name="apellidos" placeholder="Apellidos">
+                </label>
+              </div>
+              <div class="campo">
+                <label>Direc. MAC
+                  <input type="text" name="mac" placeholder="MAC" required>
+                </label>
+              </div>
+            </div>
+            <div class="grupo-campos">
+              <div class="campo">
+                <label>Clase/Aula
+                  <select name="clase">
+                    <option value="DAM">DAM</option>
+                    <option value="DAW">DAW</option>
+                    <option value="ASIR">ASIR</option>
+                  </select>
+                </label>
+              </div>
+              <div class="campo">
+                <label>
+                  <input type="checkbox" name="profesor">Soy profesor
+                </label>
+              </div>
+            </div>
+            <div class="campo-comentario">
+              <label>Comentario
+                <input type="text" name="comentario" placeholder="Comentario">
+              </label>
+            </div>
+            <div class="contenedor-botones">
+              <button type="submit">Enviar</button>
+              <button type="reset">Limpiar</button>
+            </div>
+          </form>
+        </article>
+        <aside class="contenedor-acciones">
+          <div class="seccion-accion">
+            <h2>Consultar MACs</h2>
+            <form>
+              <div class="contenedor-botones">
+                <button type="submit">Consultar MACs agregadas</button>
+              </div>
+            </form>
           </div>
-          <div class="campo">
-            <label for="comentario">Comentario</label>
-            <input id="comentario" type="text" name="comentario" placeholder="PC_1DAW1" required>
+          <div class="seccion-accion">
+            <h2>Borrar una MAC</h2>
+            <form>
+              <div class="campo-borrar">
+                <label>Introducir MAC a eliminar
+                  <input type="text" name="borrar-mac">
+                </label>
+              </div>
+              <div class="contenedor-botones">
+                <button type="submit">Borrar MAC</button>
+              </div>
+            </form>
           </div>
-          <div class="campo">
-            <label for="clase">Clase/Aula</label>
-            <select id="clase" name="clase">
-              <option value="DAM">DAM</option>
-              <option value="DAW">DAW</option>
-              <option value="ASIR">ASIR</option>
-            </select>
-          </div>
-          <div class="campo-checkbox">
-            <input id="profesor" type="checkbox" name="profesor">
-            <label for="profesor">Soy profesor (se añadirá al archivo de profesores)</label>
-          </div>
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpiar</button>
-        </form>
-      </section>
-      <section>
-        <h2>Consultas</h2>
-        <form action="consultas.html" method="get">
-          <button type="submit">Consultar MACs agregadas</button>
-        </form>
-      </section>
-      <section>
-        <h2>Borrar una MAC</h2>
-        <form>
-          <div class="campo">
-            <label for="borrar-mac">Introduce MAC a eliminar</label>
-            <input id="borrar-mac" type="text" name="borrar-mac">
-            <button type="submit">Borrar MAC</button>
-          </div>
-        </form>
+        </aside>
       </section>
     </main>
+    <footer>
+      <p>2025 - Luis Miguel Nuño</p>
+    </footer>
   </body>
 </html>
