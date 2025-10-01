@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro de MACs</title>
-    <link rel="stylesheet" href="./estilos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El bloque 'title' será rellenado o usará el valor por defecto.-->Registro de MACs
+    <link rel="stylesheet" href="./estilos.css">
   </head>
   <body>
     <header>
-      <h1>Registro de direcciones MAC</h1>
+      <h1>
+        <!-- El bloque 'header_title' mantiene el título principal.-->Registro de direcciones MAC
+      </h1>
     </header>
     <main class="contenedor-principal">
+      <!-- El bloque 'content' es el principal y será rellenado por index.pug.-->
       <section class="seccion-principal">
         <article class="contenedor-formulario">
           <h2>Introduce tus datos</h2>
           <form>
             <div class="grupo-campos">
               <div class="campo">
-                <label
-                  >Nombre
-                  <input type="text" name="nombre" placeholder="Nombre" />
+                <label>Nombre
+                  <input type="text" name="nombre" placeholder="Nombre">
                 </label>
               </div>
               <div class="campo">
-                <label
-                  >Apellidos
-                  <input type="text" name="apellidos" placeholder="Apellidos" />
+                <label>Apellidos
+                  <input type="text" name="apellidos" placeholder="Apellidos">
                 </label>
               </div>
               <div class="campo">
-                <label
-                  >Direc. MAC
-                  <input type="text" name="mac" placeholder="MAC" required />
+                <label>Direc. MAC
+                  <input type="text" name="mac" placeholder="MAC" required>
                 </label>
               </div>
             </div>
             <div class="grupo-campos">
               <div class="campo">
-                <label
-                  >Clase/Aula
+                <label>Clase/Aula
                   <select name="clase">
                     <option value="DAM">DAM</option>
                     <option value="DAW">DAW</option>
@@ -48,14 +47,13 @@
               </div>
               <div class="campo">
                 <label>
-                  <input type="checkbox" name="profesor" />Soy profesor
+                  <input type="checkbox" name="profesor">Soy profesor
                 </label>
               </div>
             </div>
             <div class="campo-comentario">
-              <label
-                >Comentario
-                <input type="text" name="comentario" placeholder="Comentario" />
+              <label>Comentario
+                <input type="text" name="comentario" placeholder="Comentario">
               </label>
             </div>
             <div class="contenedor-botones">
@@ -77,9 +75,8 @@
             <h2>Borrar una MAC</h2>
             <form>
               <div class="campo-borrar">
-                <label
-                  >Introducir MAC a eliminar
-                  <input type="text" name="borrar-mac" />
+                <label>Introducir MAC a eliminar
+                  <input type="text" name="borrar-mac">
                 </label>
               </div>
               <div class="contenedor-botones">
@@ -91,6 +88,7 @@
       </section>
     </main>
     <footer>
+      <!-- El bloque 'footer_content' mantiene el pie de página.-->
       <p>2025 - Luis Miguel Nuño</p>
     </footer>
   </body>

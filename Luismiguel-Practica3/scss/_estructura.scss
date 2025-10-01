@@ -1,0 +1,51 @@
+header {
+  background-color: #337ab7;
+  color: white;
+  padding: 1.25rem;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 0.7rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.contenedor-principal {
+  padding: 1.25rem;
+  max-width: 75rem;
+  margin: 1.25rem auto;
+  font-size: 0;
+}
+
+.seccion-principal {
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  max-width: 60rem;
+  margin: 2rem auto;
+  min-height: 25rem;
+}
+
+.contenedor-formulario,
+.contenedor-acciones {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem;
+}
+
+.contenedor-formulario {
+  width: 65%;
+  margin-right: 2%;
+}
+
+.contenedor-acciones {
+  width: 30%;
+}

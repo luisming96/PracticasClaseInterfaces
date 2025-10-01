@@ -1,0 +1,38 @@
+article.contenedor-formulario
+  h2 Introduce tus datos
+  form
+    .grupo-campos
+      .campo
+        label
+          | Nombre
+          input(type="text", name="nombre", placeholder="Nombre")
+      .campo
+        label
+          | Apellidos
+          input(type="text", name="apellidos", placeholder="Apellidos")
+      .campo
+        label
+          | Direc. MAC
+          input(type="text", name="mac", placeholder="MAC", required)
+
+    .grupo-campos
+      .campo
+        label
+          | Clase/Aula
+          select(name="clase")
+            option(value="DAM") DAM
+            option(value="DAW") DAW
+            option(value="ASIR") ASIR
+      .campo
+        label
+          input(type="checkbox", name="profesor")
+          | Soy profesor
+    
+    .campo-comentario
+      label
+        | Comentario
+        input(type="text", name="comentario", placeholder="Comentario")
+    
+    .contenedor-botones
+      button(type="submit") Enviar
+      button(type="reset") Limpiar

@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100%;
+  padding-bottom: 60px;
+}
+
+h1, h2 {
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+header {
+  background-color: #337ab7;
+  color: white;
+  padding: 1.25rem;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 0.7rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.contenedor-principal {
+  padding: 1.25rem;
+  max-width: 75rem;
+  margin: 1.25rem auto;
+  font-size: 0;
+}
+
+.seccion-principal {
+  background-color: #fff;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  max-width: 60rem;
+  margin: 2rem auto;
+  min-height: 25rem;
+}
+
+.contenedor-formulario,
+.contenedor-acciones {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem;
+}
+
+.contenedor-formulario {
+  width: 65%;
+  margin-right: 2%;
+}
+
+.contenedor-acciones {
+  width: 30%;
+}
+
+.grupo-campos {
+  font-size: 0;
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+.grupo-campos .campo {
+  display: inline-block;
+  width: 32%;
+  margin-right: 2%;
+  vertical-align: top;
+  font-size: 1rem;
+}
+.grupo-campos .campo:last-child {
+  margin-right: 0;
+}
+
+.campo-comentario,
+.campo-borrar {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.campo-comentario label,
+.campo-borrar label {
+  display: block;
+  margin-bottom: 0.32rem;
+  font-weight: bold;
+}
+.campo-comentario input,
+.campo-borrar input {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.32rem;
+  font-weight: bold;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.contenedor-botones {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+}
+.contenedor-botones button {
+  background-color: #eee;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin: 0 0.5rem;
+  min-width: 120px;
+}
+
+.seccion-accion {
+  margin-bottom: 1rem;
+}
+.seccion-accion h2 {
+  margin-bottom: 0.5rem;
+}
