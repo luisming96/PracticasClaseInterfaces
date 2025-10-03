@@ -1,0 +1,23 @@
+.barra-lateral {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  font-size: 1rem;
+
+  &__seccion {
+    margin-bottom: 1rem;
+
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__titulo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  &__contenido {
+    padding: 0.5rem;
+  }
+}

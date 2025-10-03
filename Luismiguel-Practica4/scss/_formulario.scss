@@ -1,0 +1,67 @@
+.formulario {
+  &__fila {
+    font-size: 0;
+    text-align: left;
+    margin-bottom: 1.25rem;
+  }
+
+  &__campo {
+    display: inline-block;
+    width: 32%;
+    margin-right: 2%;
+    vertical-align: top;
+    font-size: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--centrado {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 1.25rem;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__etiqueta {
+    display: block;
+    margin-bottom: 0.32rem;
+    font-weight: bold;
+
+    &--casilla {
+      display: block;
+      margin-bottom: 0.32rem;
+      font-weight: bold;
+    }
+  }
+
+  &__entrada {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+
+    &--comentario {
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  &__selector {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+
+  &__casilla {
+    margin-right: 0.5rem;
+  }
+
+  &__texto-casilla {
+    font-weight: normal;
+  }
+}

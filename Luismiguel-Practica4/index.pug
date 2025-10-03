@@ -1,0 +1,14 @@
+extends layout.pug
+
+block contenido
+  .principal__contenedor
+    section.principal__contenido
+      .contenedor-formulario
+        h2.contenedor-formulario__titulo Introduce tus datos
+        form.formulario
+          include componentes/_datos-personales
+          include componentes/_datos-clase
+          include componentes/_comentario
+          include componentes/_botones
+    
+    include componentes/_barra-lateral

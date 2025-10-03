@@ -1,0 +1,30 @@
+.principal {
+  padding: 1.25rem;
+  max-width: 75rem;
+  margin: 1.25rem auto;
+  font-size: 0;
+
+  &__contenedor {
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    max-width: 60rem;
+    margin: 2rem auto;
+    min-height: 25rem;
+  }
+
+  &__contenido {
+    display: inline-block;
+    vertical-align: top;
+    width: 65%;
+    margin-right: 2%;
+    font-size: 1rem;
+  }
+}
+
+.contenedor-formulario {
+  &__titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}

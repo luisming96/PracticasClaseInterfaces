@@ -1,0 +1,12 @@
+.formulario__fila
+  .formulario__campo
+    label.formulario__etiqueta
+      | Clase/Aula
+      select.formulario__selector(name="clase")
+        option(value="DAM") DAM
+        option(value="DAW") DAW
+        option(value="ASIR") ASIR
+  .formulario__campo
+    label.formulario__etiqueta.formulario__etiqueta--casilla
+      input.formulario__casilla(type="checkbox", name="profesor")
+      span.formulario__texto-casilla Soy profesor

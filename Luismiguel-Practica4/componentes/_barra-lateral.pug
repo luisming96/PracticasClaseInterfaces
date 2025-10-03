@@ -1,0 +1,16 @@
+aside.barra-lateral
+  .barra-lateral__seccion
+    h2.barra-lateral__titulo Consultar MACs
+    .barra-lateral__contenido
+      .grupo-botones
+        button.boton.boton--informacion(type="submit") Consultar MACs agregadas
+  
+  .barra-lateral__seccion
+    h2.barra-lateral__titulo Borrar una MAC
+    .barra-lateral__contenido
+      .formulario__campo.formulario__campo--centrado
+        label.formulario__etiqueta
+          | Introducir MAC a eliminar
+          input.formulario__entrada(type="text", name="borrar-mac")
+      .grupo-botones
+        button.boton.boton--borrar(type="submit") Borrar MAC

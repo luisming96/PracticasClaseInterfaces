@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de MACs</title>
+    <link rel="stylesheet" href="principal.css">
+  </head>
+  <body class="pagina">
+    <header class="cabecera">
+      <h1 class="cabecera__titulo">Registro de direcciones MAC</h1>
+    </header>
+    <main class="principal">
+      <div class="principal__contenedor">
+        <section class="principal__contenido">
+          <div class="contenedor-formulario">
+            <h2 class="contenedor-formulario__titulo">Introduce tus datos</h2>
+            <form class="formulario">
+              <div class="formulario__fila">
+                <div class="formulario__campo">
+                  <label class="formulario__etiqueta">Nombre
+                    <input class="formulario__entrada" type="text" name="nombre" placeholder="Nombre">
+                  </label>
+                </div>
+                <div class="formulario__campo">
+                  <label class="formulario__etiqueta">Apellidos
+                    <input class="formulario__entrada" type="text" name="apellidos" placeholder="Apellidos">
+                  </label>
+                </div>
+                <div class="formulario__campo">
+                  <label class="formulario__etiqueta">Direc. MAC
+                    <input class="formulario__entrada formulario__entrada--requerido" type="text" name="mac" placeholder="MAC" required>
+                  </label>
+                </div>
+              </div>
+              <div class="formulario__fila">
+                <div class="formulario__campo">
+                  <label class="formulario__etiqueta">Clase/Aula
+                    <select class="formulario__selector" name="clase">
+                      <option value="DAM">DAM</option>
+                      <option value="DAW">DAW</option>
+                      <option value="ASIR">ASIR</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="formulario__campo">
+                  <label class="formulario__etiqueta formulario__etiqueta--casilla">
+                    <input class="formulario__casilla" type="checkbox" name="profesor"><span class="formulario__texto-casilla">Soy profesor</span>
+                  </label>
+                </div>
+              </div>
+              <div class="formulario__campo formulario__campo--centrado">
+                <label class="formulario__etiqueta">Comentario
+                  <input class="formulario__entrada formulario__entrada--comentario" type="text" name="comentario" placeholder="Comentario">
+                </label>
+              </div>
+              <div class="grupo-botones">
+                <button class="boton boton--principal" type="submit">Enviar</button>
+                <button class="boton boton--secundario" type="reset">Limpiar</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <aside class="barra-lateral">
+          <div class="barra-lateral__seccion">
+            <h2 class="barra-lateral__titulo">Consultar MACs</h2>
+            <div class="barra-lateral__contenido">
+              <div class="grupo-botones">
+                <button class="boton boton--informacion" type="submit">Consultar MACs agregadas</button>
+              </div>
+            </div>
+          </div>
+          <div class="barra-lateral__seccion">
+            <h2 class="barra-lateral__titulo">Borrar una MAC</h2>
+            <div class="barra-lateral__contenido">
+              <div class="formulario__campo formulario__campo--centrado">
+                <label class="formulario__etiqueta">Introducir MAC a eliminar
+                  <input class="formulario__entrada" type="text" name="borrar-mac">
+                </label>
+              </div>
+              <div class="grupo-botones">
+                <button class="boton boton--borrar" type="submit">Borrar MAC</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="pie-pagina">
+      <p class="pie-pagina__texto">2025 - Luis Miguel Nuño</p>
+    </footer>
+  </body>
+</html>

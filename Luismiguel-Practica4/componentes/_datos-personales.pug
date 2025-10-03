@@ -1,0 +1,13 @@
+.formulario__fila
+  .formulario__campo
+    label.formulario__etiqueta
+      | Nombre
+      input.formulario__entrada(type="text", name="nombre", placeholder="Nombre")
+  .formulario__campo
+    label.formulario__etiqueta
+      | Apellidos
+      input.formulario__entrada(type="text", name="apellidos", placeholder="Apellidos")
+  .formulario__campo
+    label.formulario__etiqueta
+      | Direc. MAC
+      input.formulario__entrada.formulario__entrada--requerido(type="text", name="mac", placeholder="MAC", required)

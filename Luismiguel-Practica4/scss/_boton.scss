@@ -1,0 +1,40 @@
+.grupo-botones {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+}
+
+.boton {
+  background-color: #eee;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin: 0 0.5rem;
+  min-width: 120px;
+  cursor: pointer;
+
+  &--principal {
+    background-color: #337ab7;
+    color: white;
+    border-color: #2e6da4;
+  }
+
+  &--secundario {
+    background-color: #eee;
+    color: #333;
+  }
+
+  &--informacion {
+    background-color: #5bc0de;
+    color: white;
+    border-color: #46b8da;
+  }
+  
+  &--borrar {
+  background-color: #d9534f;
+  color: white;
+  border-color: #d43f3a;
+  }
+
+}
