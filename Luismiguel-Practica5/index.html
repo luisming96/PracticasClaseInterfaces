@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de direcciones MAC</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body class="bg-light">
+    <header class="bg-primary text-white text-center py-4">
+      <h1 class="mb-0">Registro de direcciones MAC</h1>
+    </header>
+    <main class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-7 bg-white p-5">
+          <h2 class="text-center mb-4">Introduce tus datos</h2>
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <label class="form-label" for="nombre">Nombre</label>
+                <input
+                  class="form-control"
+                  id="nombre"
+                  type="text"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="apellidos">Apellidos</label>
+                <input
+                  class="form-control"
+                  id="apellidos"
+                  type="text"
+                  placeholder="Apellidos"
+                />
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="mac">Direc. MAC</label>
+                <input
+                  class="form-control"
+                  id="mac"
+                  type="text"
+                  placeholder="MAC"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label class="form-label" for="clase">Clase/Aula</label>
+                <select class="form-select" id="clase">
+                  <option value="DAM">DAM</option>
+                  <option value="DAW">DAW</option>
+                  <option value="ASIR">ASIR</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Tipo de usuario</label>
+                <div class="form-check mt-2">
+                  <input
+                    class="form-check-input"
+                    id="profesor"
+                    type="checkbox"
+                  />
+                  <label class="form-check-label" for="profesor"
+                    >Soy profesor</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-8 col-lg-6 mx-auto">
+                <label class="form-label" for="comentario">Comentario</label>
+                <input
+                  class="form-control"
+                  id="comentario"
+                  type="text"
+                  placeholder="Comentario"
+                />
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <button class="btn btn-primary me-2" type="submit">Enviar</button>
+              <button class="btn btn-secondary" type="reset">Limpiar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-4 mt-4 mt-md-0">
+          <div class="mb-4 text-center">
+            <h2 class="h5 mb-3">Consultar MACs</h2>
+            <button class="btn btn-info text-white">
+              Consultar MACs agregadas
+            </button>
+          </div>
+          <div class="text-center">
+            <h2 class="h5 mb-3">Borrar una MAC</h2>
+            <label class="form-label" for="borrar-mac"
+              >Introducir MAC a eliminar</label
+            >
+            <input
+              class="form-control mb-3"
+              id="borrar-mac"
+              type="text"
+              placeholder="MAC"
+            />
+            <button class="btn btn-danger">Borrar MAC</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <p class="mb-0">2025 - Luis Miguel Nuño</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
