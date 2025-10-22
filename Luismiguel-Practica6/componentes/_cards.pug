@@ -1,0 +1,10 @@
+.section.my-5
+  h3.text-center.mb-4 Lugares destacados
+  .row
+    each i in [1, 2, 3]
+      .col-md-4.mb-3
+        .card.shadow-sm
+          img.card-img-top(src=`https://picsum.photos/400/200?random=${i}`, alt="Lugar destacado")
+          .card-body
+            h5.card-title Lugar #{i}
+            p.card-text Descripción breve del lugar destacado.

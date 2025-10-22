@@ -1,0 +1,27 @@
+extends layout
+
+block navbar
+  include componentes/_navbar_map
+
+block contenido
+  .row
+    .col-12.col-lg-8
+      .card-placeholder-detalle.bg-success.rounded.float-start.me-3.mb-3
+      
+      h1 Ciudad de las Artes y las Ciencias
+      p.lead Un lugar perfecto para disfrutar en familia con niños pequeños.
+      
+      h3.mt-4 ¿Qué ver?
+      p El Oceanográfico, Museo de las Ciencias y Hemisfèric.
+    
+    .col-12.col-lg-4
+      h4 Comentarios
+      .card.mb-3
+        .card-body
+          p.mb-1
+            strong María P. (5/5):
+          p.mb-0.small ¡Los niños alucinaron con el Oceanográfico!
+          
+      h5.mt-4 Añadir comentario
+      textarea.form-control.mb-2(rows="3", placeholder="Escribe tu comentario…")
+      button.btn.btn-primary(type="button") Enviar

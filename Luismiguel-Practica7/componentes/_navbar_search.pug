@@ -1,0 +1,14 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.shadow-sm
+  .container
+    .d-flex.align-items-center.me-3
+      i.bi.bi-search.text-white.fs-5.me-2
+      input.form-control.form-control-sm(type="search", placeholder="Buscar ciudad…")
+    
+    a.navbar-brand(href="index.html") AviájarFamilia
+    button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#menuPrincipal")
+      span.navbar-toggler-icon
+    #menuPrincipal.collapse.navbar-collapse
+      ul.navbar-nav.ms-auto
+        li.nav-item: a.nav-link.active(href="index.html") Te recomendamos
+        li.nav-item: a.nav-link(href="itinerario_puntos.html") Mis itinerarios
+        li.nav-item: a.nav-link(href="#") Mi cuenta

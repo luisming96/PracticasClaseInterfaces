@@ -1,0 +1,27 @@
+#carouselExampleIndicators.carousel.slide(data-bs-ride="carousel")
+  .carousel-indicators
+    button(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide-to="0", class="active")
+    button(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide-to="1")
+    button(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide-to="2")
+
+  .carousel-inner.rounded.shadow-sm
+    .carousel-item.active
+      img(src="https://picsum.photos/800/400?random=1", class="d-block w-100", alt="Imagen 1")
+      .carousel-caption
+        h5 Bienvenido
+        p Descubre lugares únicos.
+    .carousel-item
+      img(src="https://picsum.photos/800/400?random=2", class="d-block w-100", alt="Imagen 2")
+      .carousel-caption
+        h5 Cultura y aventura
+        p Vive experiencias inolvidables.
+    .carousel-item
+      img(src="https://picsum.photos/800/400?random=3", class="d-block w-100", alt="Imagen 3")
+      .carousel-caption
+        h5 Gastronomía
+        p Sabores auténticos de cada destino.
+
+  button.carousel-control-prev(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide="prev")
+    span.carousel-control-prev-icon(aria-hidden="true")
+  button.carousel-control-next(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide="next")
+    span.carousel-control-next-icon(aria-hidden="true")

@@ -1,0 +1,14 @@
+h3,
+h5 {
+  color: #004085;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
