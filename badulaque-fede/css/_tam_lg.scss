@@ -29,9 +29,9 @@
   .three.columns {
     width: 22%;
   }
-  // .four.columns {
-  //   width: 30.6666666667%;
-  // }
+  .four.columns {
+  width: 30.6666666667%;
+  }
   .five.columns {
     width: 39.3333333333%;
   }
@@ -282,9 +282,5 @@
   .offset-by-one-half-lg.column,
   .offset-by-one-half-lg.columns {
     margin-left: 52%;
-  }
-  
-  .six.columns {
-    width: 30.6666666667%;
   }
 }
