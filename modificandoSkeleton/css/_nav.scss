@@ -1,0 +1,24 @@
+ul.nav_horizontal {
+  li {
+    display: inline;
+    margin-right: 1.5rem;
+  }
+}
+
+ul.nav_vertical {
+  li{
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+.nav_hamburguesa {
+  text-align: right;
+  font-size: 2.5rem;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+.nav_principal_pc{
+  display: none;
+}
