@@ -1,4 +1,4 @@
-@use 'mixins';
+@use '_mixins' as *;
 
 @media (min-width: 550px) {
   .container-fluid {
@@ -10,23 +10,6 @@
   .aparecer {
     display: block;
   }
-
-  .column, .columns { margin-left: 4%; }
-  .column:first-child, .columns:first-child { margin-left: 0; }
-
-  .six.columns { width: 48%; }         
-  .one-half.column { width: 48%; }
-  .one.column, .one.columns { width: 4.6666666667%; }
-  .two.columns { width: 13.3333333333%; }
-  .three.columns { width: 22%; }
-  .four.columns { width: 30.6666666667%; }
-  .five.columns { width: 39.3333333333%; }
-  .seven.columns { width: 56.6666666667%; }
-  .eight.columns { width: 65.3333333333%; }
-  .nine.columns { width: 74.0%; }
-  .ten.columns { width: 82.6666666667%; }
-  .eleven.columns { width: 91.3333333333%; }
-  .twelve.columns { width: 100%; margin-left: 0; }
 
   .galeria-amigos .six.columns {
     width: 50%;
@@ -60,9 +43,20 @@
     margin-left: 0;
   }
 
-  @include mixins.generar_columnas("lg");
+  @include generar-columnas("lg");
 
+  .one-third-lg.column { width: 30.6666666667%; }
+  .two-thirds-lg.column { width: 65.3333333333%; }
+  .one-half-lg.column { width: 48%; }
+
+  .offset-by-one-third.column, .offset-by-one-third.columns { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column, .offset-by-two-thirds.columns { margin-left: 69.3333333333%; }
+  .offset-by-one-half.column, .offset-by-one-half.columns { margin-left: 52%; }
+  
   .galeria-amigos .four-lg.columns {
     width: 33.33333333%;
   }
+
+@media (min-width: 1000px) {}
+@media (min-width: 1200px) {}
 } 

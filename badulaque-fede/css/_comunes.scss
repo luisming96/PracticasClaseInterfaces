@@ -36,21 +36,17 @@ footer {
   margin-bottom: 2rem;
 }
 
-header nav ul {
+header nav ul,
+.menu-vertical {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-header nav li {
+header nav li,
+.menu-vertical li{
   margin-bottom: 0;
-}
-
-.menu-vertical {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .galeria-amigos .columns {
